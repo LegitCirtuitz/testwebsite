@@ -65,8 +65,8 @@ export default function Home() {
       <div style={boxStyle}>
         <h1 style={{ marginBottom: '2rem' }}>Blog Page Website</h1>
         
-        <Link href="/Blogs" style={{ textDecoration: 'none' }}>
-          <button style={buttonStyle}>blog</button>
+        <Link href="/blog" style={{ textDecoration: 'none' }}>
+          <button style={buttonStyle}>Blogs</button>
         </Link>
       </div>
 
