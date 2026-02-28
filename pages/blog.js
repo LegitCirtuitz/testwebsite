@@ -108,6 +108,31 @@ export default function BlogList() {
         </div>
       </Link>
 
+      <Link href="/blog/post-3" style={cardStyle}
+      onMouseOver={(e) => {
+        e.currentTarget.style.transform = 'translateY(-5px)';
+        e.currentTarget.style.borderColor = '#3b82f6';
+      }}
+      onMouseOut={(e) => {
+        e.currentTarget.style.transform = 'translateY(0)';
+        e.currentTarget.style.borderColor = '#27272a';
+      }}>
+  
+  <div style={tagStyle}>TRADITION</div>
+  
+  <h2 style={{ fontSize: '1.8rem', marginBottom: '1rem' }}>CNY Snacks & Games</h2>
+  
+  <p style={{ color: '#a1a1aa', lineHeight: '1.6', marginBottom: '1.5rem' }}>
+    We had reunion dinner at my grandparent’s house and played a fun game 
+    using cooking utensils to try and win money from a pot...
+  </p>
+  
+  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+    <span style={{ fontWeight: 'bold', color: '#3b82f6' }}>Read full story →</span>
+    <span style={{ color: '#52525b', fontSize: '0.9rem' }}>- By Enze</span>
+  </div>
+</Link>
+
     </div>
   );
 }
