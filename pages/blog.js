@@ -112,7 +112,7 @@ export default function BlogList() {
         
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <span style={{ fontWeight: 'bold', color: '#3b82f6' }}>Read full story →</span>
-          <span style={{ color: '#52525b', fontSize: '0.9rem' }}>- By Cici</span>
+          <span style={{ color: '#52525b', fontSize: '0.9rem' }}> By Cici</span>
         </div>
       </Link>
 
@@ -137,7 +137,7 @@ export default function BlogList() {
   
   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
     <span style={{ fontWeight: 'bold', color: '#3b82f6' }}>Read full story →</span>
-    <span style={{ color: '#52525b', fontSize: '0.9rem' }}>- By Avery</span>
+    <span style={{ color: '#52525b', fontSize: '0.9rem' }}> By Avery</span>
   </div>
 </Link>
 
