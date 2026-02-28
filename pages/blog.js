@@ -77,7 +77,7 @@ export default function BlogList() {
       </Link>
 
       {/* --- Card 2: NEW! My Chinese New Year --- */}
-      <Link href="/blog/my-chinese-new-year" style={cardStyle}
+      <Link href="/blog/post-2" style={cardStyle}
             onMouseOver={(e) => {
               e.currentTarget.style.transform = 'translateY(-5px)';
               e.currentTarget.style.borderColor = '#3b82f6';
