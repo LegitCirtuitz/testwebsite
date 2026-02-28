@@ -64,6 +64,14 @@ export default function BlogList() {
 
       {/* --- Card 1: The Pipe Incident (keeping what we already had) --- */}
       <Link href="/blog/post-1" style={cardStyle}>
+                    onMouseOver={(e) => {
+              e.currentTarget.style.transform = 'translateY(-5px)';
+              e.currentTarget.style.borderColor = '#3b82f6';
+            }}
+            onMouseOut={(e) => {
+              e.currentTarget.style.transform = 'translateY(0)';
+              e.currentTarget.style.borderColor = '#27272a';
+            }}>
         <div style={tagStyle}>STORY</div>
         <h2 style={{ fontSize: '1.8rem', marginBottom: '1rem' }}>The Pipe Incident</h2>
         <p style={{ color: '#a1a1aa', lineHeight: '1.6', marginBottom: '1.5rem' }}>
