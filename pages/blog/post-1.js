@@ -6,66 +6,76 @@ export default function PostOne() {
     backgroundColor: '#09090b',
     color: '#ffffff',
     minHeight: '100vh',
-    padding: '6rem 2rem',
+    padding: '4rem 1.5rem',
     fontFamily: 'sans-serif',
     display: 'flex',
-    justifyContent: 'center'
+    flexDirection: 'column',
+    alignItems: 'center'
   };
 
   const articleBox = {
     backgroundColor: '#18181b',
-    padding: '4rem',
-    borderRadius: '4rem', // Extra smooth for the main content
+    padding: '3.5rem 2.5rem',
+    borderRadius: '3.5rem', // That signature smooth edge
     border: '1px solid #27272a',
-    maxWidth: '800px',
+    maxWidth: '650px',
     width: '100%',
-    lineHeight: '1.8'
+    lineHeight: '1.8',
+    boxShadow: '0 20px 50px rgba(0,0,0,0.3)'
   };
 
   const backLink = {
-    position: 'fixed',
-    top: '2rem',
-    left: '2rem',
+    alignSelf: 'flex-start',
+    marginBottom: '2rem',
     color: '#3b82f6',
     textDecoration: 'none',
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    fontSize: '0.9rem'
   };
 
   return (
     <div style={containerStyle}>
-      <Link href="/blog" style={backLink}>
-        ← All Posts
-      </Link>
+      {/* Wrapper to keep the back link aligned with the box */}
+      <div style={{ maxWidth: '650px', width: '100%', display: 'flex', flexDirection: 'column' }}>
+        <Link href="/blog" style={backLink}>
+          ← Back to Blog
+        </Link>
 
-      <article style={articleBox}>
-        <span style={{ color: '#a1a1aa', fontSize: '0.9rem' }}>February 2026 • 5 min read</span>
-        
-        <h1 style={{ fontSize: '3.5rem', margin: '1rem 0 2rem 0', lineHeight: '1.1' }}>
-          BlogPage1: The Beginning
-        </h1>
+        <article style={articleBox}>
+          <header style={{ marginBottom: '2.5rem' }}>
+            <span style={{ color: '#71717a', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.1rem' }}>
+              Personal Stories
+            </span>
+            <h1 style={{ fontSize: '2.5rem', margin: '0.5rem 0 0 0', lineHeight: '1.2' }}>
+              The Pipe Incident
+            </h1>
+          </header>
 
-        <p style={{ fontSize: '1.2rem', color: '#d4d4d8', marginBottom: '1.5rem' }}>
-          This is where your story starts. Because we are using <strong>JSX</strong>, 
-          you can mix standard text with bold tags, images, or even custom components.
-        </p>
+          <section style={{ fontSize: '1.15rem', color: '#d4d4d8' }}>
+            <p style={{ marginBottom: '1.5rem' }}>
+              It was a sunny day in the morning when I and my family were cleaning the house. 
+              That's when a loud bang filled the house. Then, I shouted that a pipe burst.
+            </p>
 
-        <h3 style={{ color: '#3b82f6', marginTop: '2.5rem' }}>Why Smooth Edges?</h3>
-        <p style={{ color: '#a1a1aa' }}>
-          Designers often use high border-radius values (like the 4rem we used here) 
-          to make digital interfaces feel more organic and less "computer-y." 
-          It fits perfectly with your dark mode theme.
-        </p>
+            <p style={{ marginBottom: '1.5rem' }}>
+              I regret saying that. Now everyone will think that I purposely burst the pipe 
+              when I didn’t. But they didn’t think that it was me. Because the pipe burst 
+              looks more of a crack in the pipe.
+            </p>
 
-        <div style={{ 
-          marginTop: '4rem', 
-          paddingTop: '2rem', 
-          borderTop: '1px solid #27272a',
-          color: '#71717a',
-          fontSize: '0.9rem'
-        }}>
-          Thanks for reading my first post!
-        </div>
-      </article>
+            <p>
+              Together, my family and I started to fix the broken pipe. 
+              We successfully fixed the pipe.
+            </p>
+          </section>
+
+          <footer style={{ marginTop: '3rem', paddingTop: '1.5rem', borderTop: '1px solid #27272a' }}>
+            <p style={{ fontStyle: 'italic', color: '#3b82f6', fontWeight: 'bold', fontSize: '1.1rem' }}>
+              - By Enze
+            </p>
+          </footer>
+        </article>
+      </div>
     </div>
   );
 }
