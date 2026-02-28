@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function CiciPost() {
   const containerStyle = {
-    backgroundColor: '#09090b',
+    backgroundColor: '#09090b', // Matches your dark mode theme
     color: '#ffffff',
     minHeight: '100vh',
     padding: '4rem 1.5rem',
@@ -16,7 +16,7 @@ export default function CiciPost() {
   const articleBox = {
     backgroundColor: '#18181b',
     padding: '3.5rem 2.5rem',
-    borderRadius: '3.5rem', 
+    borderRadius: '3.5rem', // The signature smooth edges
     border: '1px solid #27272a',
     maxWidth: '650px',
     width: '100%',
@@ -53,17 +53,17 @@ export default function CiciPost() {
           <section style={{ fontSize: '1.15rem', color: '#d4d4d8' }}>
             <p style={{ marginBottom: '1.5rem' }}>
               When it was Chinese New Year, my family and I went to Batam. 
-              When we arrived, we went to the hotel. 
-              The hotel was big and new, I can feel that I was lying on the bed now.
+              When we arrived, we went to the hotel. The hotel was big and new, 
+              I can feel that I was lying on the bed now.
             </p>
 
             <p style={{ marginBottom: '1.5rem' }}>
-              Our room was at level 5. 
-              At level 3 there’s a pool and a garden.
+              Our room was at level 5. At level 3 there’s a pool and a garden. 
+              The next day, we went to the biggest mall for shopping then watch a movie.
             </p>
-
-            <p>
-              The next day, we went to the biggest mall for shopping then watch .
+            
+            <p style={{ marginBottom: '1.5rem' }}>
+              For the last day we play for a whole day. I wish we can go to Batam again.
             </p>
           </section>
 
