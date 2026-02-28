@@ -1,11 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // Tells Next.js to make a static site
+  output: 'export', // Mandatory for GitHub Pages
   images: {
     unoptimized: true, // Required for GitHub Pages
   },
-  basePath: '/testwebsite', // Replace with your repo name!
-  assetPrefix: '/testwebsite/', // Replace with your repo name!
+  // If your repo is "my-site", this must be "/my-site"
+  basePath: '/testwebsite', 
 };
 
 module.exports = nextConfig;
