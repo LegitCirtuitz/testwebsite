@@ -63,18 +63,10 @@ export default function Home() {
 
       {/* 4. The Main Box */}
       <div style={boxStyle}>
-        <h1 style={{ marginBottom: '2rem' }}>Menu</h1>
+        <h1 style={{ marginBottom: '2rem' }}>Blog Page Website</h1>
         
         <Link href="/hi" style={{ textDecoration: 'none' }}>
           <button style={buttonStyle}>Hi</button>
-        </Link>
-        
-        <Link href="/projects" style={{ textDecoration: 'none' }}>
-          <button style={buttonStyle}>Projects</button>
-        </Link>
-
-        <Link href="/contact" style={{ textDecoration: 'none' }}>
-          <button style={buttonStyle}>Contact</button>
         </Link>
       </div>
 
