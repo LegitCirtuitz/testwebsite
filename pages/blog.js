@@ -72,6 +72,7 @@ export default function BlogList() {
               e.currentTarget.style.transform = 'translateY(0)';
               e.currentTarget.style.borderColor = '#27272a';
             }}>
+        
         <div style={tagStyle}>STORY</div>
         <h2 style={{ fontSize: '1.8rem', marginBottom: '1rem' }}>The Pipe Incident</h2>
         <p style={{ color: '#a1a1aa', lineHeight: '1.6', marginBottom: '1.5rem' }}>
